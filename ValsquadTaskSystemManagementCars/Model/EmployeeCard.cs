@@ -12,9 +12,9 @@
             Debit = value;
             CountAccess++;
         }
-        public void setCountAccessSameMinute(decimal value)
+        public void setCountAccessSameMinute(int value)
         {
-            Debit = value;
+            CountAccessSameMinute = value;
         }
         public int Id { get; set; }
         public virtual Employee Employees { get; set; }

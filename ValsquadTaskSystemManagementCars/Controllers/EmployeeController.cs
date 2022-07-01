@@ -72,8 +72,6 @@ namespace ValsquadTaskSystemManagementCars.Controllers
                 return BadRequest(new ModelResult { ErrorCount = 1, Message = "Error Update" });
             }
             var employeeOld = _context.Employees.FirstOrDefault(x=>x.Id == id);
-            EmployeeCard employeeCard;
-
 
             employeeOld.Id = vmEmployee.Id;
             employeeOld.Age = vmEmployee.Age;
